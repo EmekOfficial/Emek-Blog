@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emek's Blog</title>
+    <script src="style.css"></script>
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <div class="container my-5"> 
+        <!-- Change Theme-->
+        <div class="position-absolute top-0 end-0">
+            <button class="btn btn-outline-dark" onclick="changeTheme()">🌗 Tema Değiştir</button>
+        </div>
+        
+
+        <!-- HEADER -->
+        <a href="index.html" style="text-decoration: none;color: inherit;"><h1 class="text-center mb-4">Emek'in Blogu</h1></a>
+
+        <!-- Create Form -->
+         <form id="create" class="my-5">
+            <div class="mb-2">
+                <input id="formBaslik" type="text" class="form-control" placeholder="Başlık" required> 
+            </div>
+            <div class="mb-2">
+                <input id="formKategori" type="text" class="form-control" placeholder="Kategori" required> 
+            </div>
+            <div class="mb-2">
+                <textarea id="formİcerik" class="form-control" rows="3" placeholder="İçerik" required></textarea>
+            </div>
+            <div class="mb-2">
+                <input class="btn btn-primary" type="submit" value="Kaydet">
+            </div>
+              
+         </form>
+
+        <!-- CATEGORIES -->
+        <div class="mb-1"><strong>Kategorilere Göre Filtrele:</strong>
+        <div id="kategoriButonlari">
+          <button type="button" class="btn btn-outline-secondary m-2" onclick="filtrele()">Tümü</button>
+        </div>
+        </div>
+
+        <div class="row" id="blogs">
+
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Başlık</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Kategori</h6>
+                <p class="card-text">İçerik</p>
+                <button class="btn btn-sm btn-warning me-2" onclick="duzenle(this)">Düzenle</button>
+                <button class="btn btn-sm btn-danger" onclick="sil(this)">Sil</button>
+              </div>
+              <div class="card-footer text-muted small">
+                <div><strong>Oluşturulma:</strong> Şimdi</div>
+                <div class="duzenleme-tarihi"><strong>Düzenleme:</strong> -</div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+    </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
