@@ -1,4 +1,4 @@
-# 🚀 Proje Adı
+# 🚀 Emek Blog
 
 Bu proje, JavaScript ile Github Pages üzerinde çalışan bir blog amacıyla geliştirilmiştir. Modern araçlar kullanılarak hazırlanmış, sade ve işlevsel bir yapıya sahiptir.
 
